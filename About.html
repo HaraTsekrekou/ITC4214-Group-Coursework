@@ -16,17 +16,23 @@
             display: block;
             margin: auto;
         }
+        
+        #footerStyle {
+            margin-top: 20px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
     </style>
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: rgb(240, 174, 87);">
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px;">
                     <div class="col" id="center">
                         <div class="card">
-                            <img src="Avatar-Zacharoula-Tsekrekou.jpg" class="d-block w-100" alt="...">
+                            <img src="Avatar-Zacharoula-Tsekrekou.jpg" class="d-block w-100">
                             <div class="card-body">
                                 <h1 class="card-title">Zacharoula Tsekrekou</h1>
                                 <p class="card-text">IT Student at Deree-The American College of Greece.</p>
@@ -36,12 +42,12 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px;">
                     <div class="col" id="center">
                         <div class="card">
                             <img src="Avatar-Manolis-Skartsilakis.jpg" class="d-block w-100" alt="...">
                             <div class="card-body">
-                                <h1 class="card-title">Emmanouil Skartsilakis</h1>
+                                <h2 class="card-title">Emmanouil Skartsilakis</h2>
                                 <p class="card-text">IT Student at Deree-The American College of Greece.</p>
                             </div>
                         </div>
@@ -52,12 +58,23 @@
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-      </button>
+        </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-      </button>
+        </button>
     </div>
+    <footer id="footerStyle">
+        <p style="overflow: auto; float: left;"><img src="Logo.png" alt="Music Logo" width="60px;" height="60px;">
+            <div style="text-align: right;">
+                Authors: Zacharoula Tsekrekou & Emmanouil Skartsilakis
+                <br>
+                <a href="mailto:Z.Tsekrekou@acg.edu">Z.Tsekrekou@acg.edu</a> &
+                <a href="mailto:E.Skartsilakis@acg.edu">E.Skartsilakis@acg.edu</a>
+            </div>
+        </p>
+
+    </footer>
 </body>
 
 </html>
