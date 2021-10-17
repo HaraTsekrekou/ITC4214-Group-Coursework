@@ -16,16 +16,27 @@
             display: block;
             margin: auto;
         }
-        
-        #footerStyle {
-            margin-top: 20px;
-            margin-left: 25px;
-            margin-right: 25px;
-        }
     </style>
 </head>
 
 <body style="background-color: rgb(240, 174, 87);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="Logo.png" alt="Music Logo" width="60px;" height="60px;"> About Page
+            </a>
+            <div style="overflow: auto; float: right;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="MusicLibrary.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -45,7 +56,7 @@
                 <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px;">
                     <div class="col" id="center">
                         <div class="card">
-                            <img src="Avatar-Manolis-Skartsilakis.jpg" class="d-block w-100" alt="...">
+                            <img src="Avatar-Manolis-Skartsilakis.jpg" class="d-block w-100">
                             <div class="card-body">
                                 <h2 class="card-title">Emmanouil Skartsilakis</h2>
                                 <p class="card-text">IT Student at Deree-The American College of Greece.</p>
@@ -64,16 +75,15 @@
         <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <footer id="footerStyle">
-        <p style="overflow: auto; float: left;"><img src="Logo.png" alt="Music Logo" width="60px;" height="60px;">
-            <div style="text-align: right;">
+    <footer style="background-color: rgb(33, 37, 41); margin-top: 20px;">
+        <p style="overflow: auto; float: left;"><img src="Logo.png" alt="Music Logo" width="60px;" height="60px;" style="margin-left: 25px;">
+            <div style="text-align: right; color: white; margin-right: 25px;">
                 Authors: Zacharoula Tsekrekou & Emmanouil Skartsilakis
                 <br>
                 <a href="mailto:Z.Tsekrekou@acg.edu">Z.Tsekrekou@acg.edu</a> &
                 <a href="mailto:E.Skartsilakis@acg.edu">E.Skartsilakis@acg.edu</a>
             </div>
         </p>
-
     </footer>
 </body>
 
