@@ -1,0 +1,22 @@
+#center {
+    display: block;
+    margin: auto;
+}
+
+#backgroundColor {
+    background-color: rgb(240, 174, 87);
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
+#gridcardMargin {
+    margin-top: 20px;
+}
+
+#footerText {
+    text-align: right;
+    margin-right: 25px;
+}
