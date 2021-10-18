@@ -9,30 +9,25 @@
     <meta name="author" content="Emmanouil Skartsilakis & Zacharoula Tsekrekou" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS-Style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="application.js"></script>
     <title>About</title>
-    <style>
-        #center {
-            display: block;
-            margin: auto;
-        }
-    </style>
 </head>
 
-<body style="background-color: rgb(240, 174, 87);">
+<body id="backgroundColor">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img src="Logo.png" alt="Music Logo" width="60px;" height="60px;"> About Page
+                <img src="Logo.png" alt="Music Logo" id="logo"> About Page
             </a>
             <div style="overflow: auto; float: right;">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="MusicLibrary.html">Home</a>
+                        <a class="nav-link" href="MusicLibrary.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="About.html">About</a>
+                        <a class="nav-link active" href="About.html">About</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +36,7 @@
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px;">
+                <div class="row row-cols-1 row-cols-md-2 g-4" id="gridcardMargin">
                     <div class="col" id="center">
                         <div class="card">
                             <img src="Avatar-Zacharoula-Tsekrekou.jpg" class="d-block w-100">
@@ -54,7 +49,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px;">
+                <div class="row row-cols-1 row-cols-md-2 g-4" id="gridcardMargin">
                     <div class="col" id="center">
                         <div class="card">
                             <img src="Avatar-Manolis-Skartsilakis.jpg" class="d-block w-100">
@@ -76,9 +71,10 @@
         <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <footer style="background-color: rgb(33, 37, 41); margin-top: 20px;">
-        <p style="overflow: auto; float: left;"><img src="Logo.png" alt="Music Logo" width="60px;" height="60px;" style="margin-left: 25px;">
-            <div style="text-align: right; color: white; margin-right: 25px;">
+    <footer style="margin-top: 20px;">
+        <p style="float: left;">
+            <img src="Logo.png" alt="Music Logo" id="logo" style="margin-left: 25px;">
+            <div id="footerText">
                 Authors: Zacharoula Tsekrekou & Emmanouil Skartsilakis
                 <br>
                 <a href="mailto:Z.Tsekrekou@acg.edu">Z.Tsekrekou@acg.edu</a> &
