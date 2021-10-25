@@ -14,9 +14,11 @@
 
 #gridcardMargin {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #footerText {
+    color: white;
     text-align: right;
     margin-right: 25px;
 }
@@ -45,4 +47,5 @@ table td {
 #buttonStyle {
     border-radius: 25px;
     padding: 5px;
+    margin-bottom: 20px;
 }
