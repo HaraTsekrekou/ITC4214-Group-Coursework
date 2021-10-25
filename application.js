@@ -2,10 +2,13 @@ $(document).ready(function() {
     $(".add-row").click(function() {
         var title = $("#title").val();
         var artist = $("#artist").val();
-        var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + title + "</td><td>" + artist + "</td></tr>";
-        $("table tbody").append(markup);
+        if (!$('#title').val() == '' && (!$('#artist').val() == '')) {
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + title + "</td><td>" + artist + "</td></tr>";
+            $("table tbody").append(markup);
+        } else {
+            alert("Empty cells")
+        }
     });
-
     $(".delete-row").click(function() {
         $("table tbody").find('input[name="record"]').each(function() {
             if ($(this).is(":checked")) {
